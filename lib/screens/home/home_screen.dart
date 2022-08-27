@@ -1,6 +1,8 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_shop_1/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_shop_1/screens/home/component/search_form.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -46,31 +48,15 @@ class HomeScreen extends StatelessWidget {
                     .copyWith(fontWeight: FontWeight.w500, color: Colors.black),
               ),
               const Text(
-                "Best Of Yours",
-                style: TextStyle(fontSize: 18.0),
+                "คัดสรรสิ่งที่ดีที่สุดสำหรับคุณ...",
+                style: TextStyle(fontSize: 18.0, backgroundColor: Colors.amber),
               ),
-              Form(
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    hintText: "ค้นหา...",
-                    filled: true,
-                    fillColor: Colors.white,
-                    border: outlineInputBorder,
-                    focusedBorder: outlineInputBorder,
-                    enabledBorder: outlineInputBorder,
-                    prefixIcon: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: SvgPicture.asset("assets/icons/search.svg"),
-                    ),
-                  ),
-                ),
-              )
+              const Padding(
+                padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+                child: SearchForm(),
+              ),
             ],
           ),
         ));
   }
 }
-
-const outlineInputBorder = OutlineInputBorder(
-  borderRadius: BorderRadius.all(Radius.circular(defalutBorderRadius)),
-);
