@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                     .copyWith(fontWeight: FontWeight.w500, color: Colors.black),
               ),
               const Text(
-                "คัดสรรสิ่งที่ดีที่สุดสำหรับคุณ...",
+                "คัดสรรสิ่งที่ดีที่สุดสำหรับคุณ",
                 style: TextStyle(fontSize: 18.0),
               ),
               const Padding(
