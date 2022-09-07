@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
               ),
               const Text(
                 "คัดสรรสิ่งที่ดีที่สุดสำหรับคุณ...",
-                style: TextStyle(fontSize: 18.0, backgroundColor: Colors.amber),
+                style: TextStyle(fontSize: 18.0),
               ),
               const Padding(
                 padding: const EdgeInsets.symmetric(vertical: defaultPadding),
